@@ -1,0 +1,31 @@
+\documentclass[xcolor=pdftex,dvipsnames,table]{tex/UT}
+
+\background{1}	% choose background {1..5}
+\taal{EN} 	%EN or NL
+\title{title}
+\subtitle{subtitle}
+\author{author}
+\date{\today} 
+\graphicspath{{./fig/}}
+
+\begin{document} 
+\maketitleslide
+
+%Choose a sideway banner, choose (side1, side2, side3, side4, side5)
+%% It's nice to change banner at a new section
+\setbeamertemplate{background}{\includegraphics[width=0.1\paperwidth,height=\paperheight]{img/side5}} 
+
+%% In UT.cls it is defined to show a TOC at te start of a new section. I think it should not be the case at the first section, so I defined the sectionNoTOC command
+\sectionNoTOC{Introduction}
+
+%% SLIDE %%
+\begin{frame}{}
+\end{frame}
+
+%% SECTION
+\setbeamertemplate{background}{\includegraphics[width=0.1\paperwidth,height=\paperheight]{img/side3}} 
+
+%% SLIDE %%
+\begin{frame}{}
+\end{frame}
+\end{document} 
